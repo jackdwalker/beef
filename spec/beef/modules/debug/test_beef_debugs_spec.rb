@@ -88,7 +88,7 @@ RSpec.describe 'BeEF Debug Command Modules:', :run_on_browserstack => true do
       print_info 'Hooking a new victim, waiting a few seconds...'
       wait = Selenium::WebDriver::Wait.new(:timeout => 30) # seconds
 
-      @driver.navigate.to "#{VICTIM_URL}"
+      @driver.navigate.to "https://www.google.com"
 
       sleep 3
 
